@@ -1,0 +1,2 @@
+Array.from(document.querySelectorAll("table th")).forEach(function(e,t){e.addEventListener("click",function(){var e,r;(e=Array.from(document.querySelectorAll("table tbody tr"))).sort(function(e,r){var o=e.children[t].textContent.trim(),n=r.children[t].textContent.trim(),a=parseFloat(o.replace(/[^0-9.-]+/g,"")),c=parseFloat(n.replace(/[^0-9.-]+/g,""));return isNaN(a)||isNaN(c)?o.localeCompare(n):a-c}),r=document.querySelector("tbody"),e.forEach(function(e){return r.appendChild(e)})})});
+//# sourceMappingURL=index.e7bdeeb1.js.map
